@@ -13,7 +13,12 @@ class boids (type):
     def update_boids(boids):
         xs,ys,xvs,yvs=boids
 
-       
+        #Fly towards the middle
+    def calculate (self, xs,ys,xvs,yvs):
+        for i in range(len(xs)):
+		    j in range(len(xs)):
+            return xvs[i]+=(xs[j]-xs[i])*0.01/len(xs)
+
 
 
 
