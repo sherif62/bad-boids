@@ -14,10 +14,24 @@ class boids (type):
         xs,ys,xvs,yvs=boids
 
         #Fly towards the middle
-    def calculate (self, xs,ys,xvs,yvs):
+        # breaking down the function into
+    def calculate (self, A, B):
         for i in range(len(xs)):
 		    j in range(len(xs)):
-            return xvs[i]+=(xs[j]-xs[i])*0.01/len(xs)
+            self.A=(xs[j]-xs[i])*0.01/len(xs)
+            self.B=(ys[j]-ys[i])*0.01/len(xs))
+    def calculate2 (self, xvs, yvs):
+        for i in range(len(xs)):
+		    j in range(len(xs)):
+        return calculate(xvs[i]+=self.A, yvs[i]+=self.B)
+
+
+
+
+            A=
+
+
+            return C=(xs[j]-xs[i])*0.01/len(xs)
 
 
 
