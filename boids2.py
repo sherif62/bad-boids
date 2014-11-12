@@ -2,13 +2,14 @@ __author__ = 'Sherif'
 import random
 from numpy import array
 import matplotlib.pyplot as plt
+import boid
 class boids (type):
-    def __init__(self, boids_x, boids_y, boid_x_velocities, boid_y_velocities):
-         self.boids_x=[random.uniform(-450,50.0) for x in range(50)]
-         self.boids_y=[random.uniform(300.0,600.0) for x in range (50)]
-         self.boid_x_velocities=[random.uniform(-20.0,20.0)for x in range(50)]
-         self.boid_x_velocities=[boid_x_velocities for x in range(50)]
-         boids = [boids(type) for type in boids_x, boids_y, boid_x_velocities, boid_y_velocities]
+    def __init__(self, boids.x, boids.y, boid.vx, boid.vy):
+         self.boids.x=[random.uniform(-450,50.0) for x in range(50)]
+         self.boids.y=[random.uniform(300.0,600.0) for x in range (50)]
+         self.boid.vx=[random.uniform(-20.0,20.0)for x in range(50)]
+         self.boid.vx=[boid.vx for x in range(50)]
+         boids = [boids(type) for type in boids.x, boids.y, boid.vx, boid.vy]
 
     def update_boids(boids):
         xs,ys,xvs,yvs=boids
